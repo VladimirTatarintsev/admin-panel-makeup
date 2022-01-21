@@ -66,7 +66,7 @@ a {
   flex-direction: column;
   border: 2px solid #8055ff;
   box-sizing: border-box;
-  height: 800px;
+  height: 1000px;
 }
 
 .table__header {
