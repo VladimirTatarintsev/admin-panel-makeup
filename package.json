@@ -7,9 +7,8 @@
     "prettier": "prettier --write ."
   },
   "pre-commit": [
-	"prettier"
- ]
-}
+    "prettier"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VladimirTatarintsev/admin-panel-makeup.git"
