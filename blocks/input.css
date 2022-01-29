@@ -56,7 +56,7 @@ body {
   cursor: pointer;
   background: inherit;
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
   right: 0;
 }
 .input__icon {
