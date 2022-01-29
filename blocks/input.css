@@ -2,102 +2,67 @@ html,
 body {
   height: 100vh;
   padding-top: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  line-height: 1rem;
+  font-weight: 400;
 }
+
 .input {
   width: 350px;
   height: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   border: 1px dashed #8055ff;
   box-sizing: border-box;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0 3rem;
-  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
 }
 .input__form {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
-
 .input__label {
-  font-size: 13px;
-  line-height: 16px;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 }
-
 .input__field {
-  width: 100%;
+  outline: none;
   height: 2rem;
-  font-size: 13px;
-  padding: 0.5rem;
   border: 1px solid #459df5;
   box-sizing: border-box;
   border-radius: 4px;
-  position: relative;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 }
-
-.input__field_empty {
-  width: 100%;
-  height: 2rem;
-  font-size: 13px;
-  padding: 0.5rem;
-  border: 1px solid #459df5;
-  box-sizing: border-box;
-  border-radius: 4px;
+.input__field:focus {
+  box-shadow: 0 0 5px rgb(99, 161, 233);
 }
-.input__field_empty::placeholder {
+.input__field::placeholder {
   color: #bad8f5;
 }
-
+.input__field_empty {
+}
 .input__field_incorrect {
-  width: 100%;
-  height: 2rem;
-  font-size: 13px;
-  padding: 0.5rem 2rem 0.5rem 0.5rem;
   border: 1px solid #f53152;
-  box-sizing: border-box;
-  border-radius: 4px;
-  outline: none;
 }
 .input__field_incorrect:focus {
-  border-color: #459df5;
-}
-
-.input__field_incorrect::placeholder {
-  color: #bad8f5;
-}
-
-.input__field_disabled {
-  width: 100%;
-  height: 2rem;
-  font-size: 13px;
-  padding: 0.5rem 2rem 0.5rem 0.5rem;
   border: 1px solid #459df5;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: #bad8f5;
 }
-
-.input__field_disabled::placeholder {
-  color: #bad8f5;
-}
-
-.input__icon {
-  width: 1rem;
-  height: 1rem;
-}
-
-.input__img:hover {
-  cursor: pointer;
-}
-
 .input__button {
   border: none;
   cursor: pointer;
   background: inherit;
   position: absolute;
+  bottom: 2px;
   right: 0;
-  bottom: 0;
+}
+.input__icon {
+  width: 1rem;
+  height: 1rem;
+}
+.input__field_disabled {
+  background: #bad8f5;
 }
