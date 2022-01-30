@@ -8,61 +8,84 @@ body {
   font-weight: 400;
 }
 
-.input {
-  width: 350px;
+.input-form {
+  width: 352px;
   height: 400px;
   border: 1px dashed #8055ff;
   box-sizing: border-box;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 0 3rem;
+  padding: 3rem;
   margin: 0 auto;
 }
-.input__form {
+.input-form__container-empty {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.input-form__container-incorrect {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.input-form__container-disabled {
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.input-form__row {
   display: flex;
   flex-direction: column;
-  position: relative;
+  width: 100%;
 }
-.input__label {
-  margin-bottom: 0.5rem;
+.input-form__label {
+  margin-bottom: 8px;
   cursor: pointer;
+  height: 16px;
 }
-.input__field {
-  outline: none;
-  height: 2rem;
+.input-form__area {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-form__field {
+  height: 32px;
+  width: 100%;
   border: 1px solid #459df5;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 }
-.input__field:focus {
-  box-shadow: 0 0 5px rgb(99, 161, 233);
+.input-form__field:focus {
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
 }
-.input__field::placeholder {
+.input-form__field::placeholder {
   color: #bad8f5;
 }
-.input__field_empty {
-}
-.input__field_incorrect {
+
+.input-form__field_incorrect {
   border: 1px solid #f53152;
 }
-.input__field_incorrect:focus {
+.input-form__field_incorrect:focus {
   border: 1px solid #459df5;
 }
-.input__button {
+.input-form__button {
   border: none;
   cursor: pointer;
   background: inherit;
   position: absolute;
-  bottom: 0;
+  display: flex;
   right: 0;
 }
-.input__icon {
-  width: 1rem;
-  height: 1rem;
+.input-form__icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
-.input__field_disabled {
+.input-form__field_disabled {
   background: #bad8f5;
+  color: #000;
 }
