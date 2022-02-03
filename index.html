@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Block Inputs</title>
+    <link rel="stylesheet" href="blocks/search-bar.css" />
     <link rel="stylesheet" href="blocks/input.css" />
+    <link rel="stylesheet" href="blocks/checkbox-radio.css" />
+    <link rel="stylesheet" href="blocks/common.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,40 +13,56 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <title>search-bar</title>
   </head>
+
   <body>
-    <div class="input-form">
-      <div class="input-form__container">
-        <div class="input-form__row">
-          <label class="input-form__label" for="input-empty"
-            >Дата и время заказа</label
-          >
-          <div class="input-form__area">
+    <!--Search-bar-->
+    <div class="wrapper">
+      <div class="search-bar">
+        <div class="search-bar__item-group">
+          <div class="serch-bar__item-area">
             <input
-              class="input-form__field"
+              class="search-bar__input"
               type="text"
-              id="input-empty"
-              placeholder="Введите"
+              placeholder="Номер заказа или ФИО"
             />
+            <svg
+              class="search-bar__icon"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="#459DF5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                fill="none"
+              />
+            </svg>
           </div>
-        </div>
-      </div>
-      <div class="input-form__container">
-        <div class="input-form__row">
-          <label class="input-form__label" for="input-incorrect"
-            >Дата и время заказа</label
-          >
-          <div class="input-form__area">
+
+          <div class="serch-bar__item-area">
             <input
-              class="input-form__field input-form__field_incorrect"
+              class="search-bar__input"
               type="text"
-              id="input-incorrect"
-              placeholder="Введите"
-              value="06.12.2021"
+              placeholder="Номер заказа или ФИО"
+              value="50744"
             />
-            <button class="input-form__button">
+            <svg
+              class="search-bar__icon"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="#459DF5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                fill="none"
+              />
+            </svg>
+            <button class="search-bar__button">
               <svg
-                class="input-form__icon"
+                class="search-bar__button-icon"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#BAD8F5"
@@ -57,39 +74,119 @@
           </div>
         </div>
       </div>
-      <div class="input-form__container">
-        <div class="input-form__row">
-          <label class="input-form__label" for="input-disabled"
-            >Дата и время заказа</label
-          >
-          <div class="input-form__area">
-            <input
-              disabled
-              class="input-form__field input-form__field_disabled"
-              type="text"
-              id="input-disabled"
-              placeholder="Введите"
-              value="06.12.2021"
-            />
-            <div class="input-form__icon-area">
-              <svg
-                class="input-form__icon"
-                viewBox="0 0 16 16"
-                fill="#000"
-                stroke="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
+    </div>
+
+    <!--Checkbox & Radio-->
+    <div class="wrapper">
+      <div class="checkbox-block">
+        <input class="checkbox-block__item" type="checkbox" id="check-1" />
+        <label class="checkbox-block__label" for="check-1"></label>
+        <input
+          checked
+          class="checkbox-block__item"
+          type="checkbox"
+          id="check-2"
+        />
+        <label class="checkbox-block__label" for="check-2"></label>
+      </div>
+      <div class="radio-block">
+        <input
+          class="radio-block__item"
+          type="radio"
+          name="radio-button"
+          id="radio-1"
+        />
+        <label class="radio-block__label" for="radio-1"></label>
+        <input
+          class="radio-block__item"
+          checked
+          type="radio"
+          name="radio-button"
+          id="radio-2"
+        />
+        <label class="radio-block__label" for="radio-2"></label>
+      </div>
+    </div>
+
+    <!--Input-->
+    <div class="wrapper">
+      <div class="input-form">
+        <div class="input-form__container">
+          <div class="input-form__row">
+            <label class="input-form__label" for="input-empty"
+              >Дата и время заказа</label
+            >
+            <div class="input-form__area">
+              <input
+                class="input-form__field"
+                type="text"
+                id="input-empty"
+                placeholder="Введите"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="input-form__container">
+          <div class="input-form__row">
+            <label class="input-form__label" for="input-incorrect"
+              >Дата и время заказа</label
+            >
+            <div class="input-form__area">
+              <input
+                class="input-form__field input-form__field_incorrect"
+                type="text"
+                id="input-incorrect"
+                placeholder="Введите"
+                value="06.12.2021"
+              />
+              <button class="input-form__button">
+                <svg
+                  class="input-form__icon"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="#BAD8F5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="input-form__container">
+          <div class="input-form__row">
+            <label class="input-form__label" for="input-disabled"
+              >Дата и время заказа</label
+            >
+            <div class="input-form__area">
+              <input
+                disabled
+                class="input-form__field input-form__field_disabled"
+                type="text"
+                id="input-disabled"
+                placeholder="Введите"
+                value="06.12.2021"
+              />
+              <div class="input-form__icon-area">
+                <svg
+                  class="input-form__icon"
+                  viewBox="0 0 16 16"
+                  fill="#000"
                   stroke="none"
-                />
-                <path
-                  d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z"
-                  stroke="none"
-                />
-              </svg>
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z"
+                    stroke="none"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
