@@ -50,7 +50,7 @@ body {
 .checkbox-block__item:checked + .checkbox-block__label::before {
   border-color: #459df5;
   background-color: #459df5;
-  background-image: url(icons/checkmark.svg);
+  background-image: url(/icons/checkmark.svg);
 }
 .radio-block {
   width: 6.5rem;
@@ -91,5 +91,5 @@ body {
 .radio-block__item:checked + .radio-block__label::before {
   border-color: #459df5;
   background-color: #459df5;
-  background-image: url(icons/dot.svg);
+  background-image: url(/icons/dot.svg);
 }
