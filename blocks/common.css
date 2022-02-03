@@ -8,7 +8,3 @@ body {
 .wrapper {
   margin-right: 3rem;
 }
-.wrapper:nth-child(3) {
-  padding-left: 3rem;
-  padding-top: 0px;
-}
