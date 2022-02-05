@@ -24,6 +24,10 @@ body {
   justify-content: space-evenly;
   margin-right: 3rem;
 }
+.checkbox-block__area {
+  display: flex;
+  align-items: center;
+}
 
 .checkbox-block__item {
   z-index: -1;
@@ -61,6 +65,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.radio-block__area {
+  display: flex;
+  align-items: center;
 }
 
 .radio-block__item {
