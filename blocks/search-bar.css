@@ -2,12 +2,13 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Ubuntu", sans-serif;
 }
 .wrapper {
   padding-top: 3rem;
-  font-family: "Ubuntu" sans-serif;
   font-size: 13px;
   color: #000;
+  height: 100%;
 }
 .search-bar {
   width: 22rem;
