@@ -4,8 +4,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .wrapper {
-  margin-right: 3rem;
-  border: none;
+  height: 460px;
 }
