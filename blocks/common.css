@@ -2,11 +2,11 @@ html,
 body {
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  flex-wrap: wrap;
+  height: 100vh;
 }
 .wrapper {
-  height: 460px;
+  margin-bottom: 2rem;
 }

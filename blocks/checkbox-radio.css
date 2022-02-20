@@ -3,14 +3,12 @@ body {
   width: 100%;
   height: 100%;
 }
-.wrapper {
-  padding-top: 3rem;
+.wrapper__checkbox-radio {
   font-family: "Ubuntu" sans-serif;
   font-size: 13px;
   color: #000;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .checkbox-block {
