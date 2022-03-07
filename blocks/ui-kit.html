@@ -22,13 +22,13 @@
     <div class="wrapper wrapper__input">
       <div class="input-form">
         <div class="input-form__container">
-          <div class="input-form__row">
-            <label class="input-form__label" for="input-empty"
+          <div class="input">
+            <label class="input__label" for="input-empty"
               >Дата и время заказа</label
             >
-            <div class="input-form__area">
+            <div class="input__area">
               <input
-                class="input-form__field"
+                class="input__field"
                 type="text"
                 id="input-empty"
                 placeholder="Введите"
@@ -37,21 +37,21 @@
           </div>
         </div>
         <div class="input-form__container">
-          <div class="input-form__row">
-            <label class="input-form__label" for="input-incorrect"
+          <div class="input">
+            <label class="input__label" for="input-incorrect"
               >Дата и время заказа</label
             >
-            <div class="input-form__area">
+            <div class="input__area">
               <input
-                class="input-form__field input-form__field_incorrect"
+                class="input__field input__field_incorrect"
                 type="text"
                 id="input-incorrect"
                 placeholder="Введите"
                 value="06.12.2021"
               />
-              <button class="input-form__button">
+              <button class="input__button">
                 <svg
-                  class="input-form__icon"
+                  class="input__icon"
                   viewBox="0 0 16 16"
                   fill="none"
                   stroke="#BAD8F5"
@@ -64,22 +64,22 @@
           </div>
         </div>
         <div class="input-form__container">
-          <div class="input-form__row">
-            <label class="input-form__label" for="input-disabled"
+          <div class="input">
+            <label class="input__label" for="input-disabled"
               >Дата и время заказа</label
             >
-            <div class="input-form__area">
+            <div class="input__area">
               <input
                 disabled
-                class="input-form__field input-form__field_disabled"
+                class="input__field input__field_disabled"
                 type="text"
                 id="input-disabled"
                 placeholder="Введите"
                 value="06.12.2021"
               />
-              <div class="input-form__icon-area">
+              <div class="input__icon-area">
                 <svg
-                  class="input-form__icon"
+                  class="input__icon"
                   viewBox="0 0 16 16"
                   fill="#000"
                   stroke="none"
@@ -163,39 +163,34 @@
 
     <div class="wrapper wrapper__checkbox-radio">
       <div class="checkbox-block">
-        <div class="checkbox-block__area">
-          <input class="checkbox-block__item" type="checkbox" id="check-1" />
-          <label class="checkbox-block__label" for="check-1"></label>
+        <div class="checkbox">
+          <input class="checkbox__item" type="checkbox" id="check-1" />
+          <label class="checkbox__label" for="check-1"></label>
         </div>
-        <div class="checkbox-block__area">
-          <input
-            checked
-            class="checkbox-block__item"
-            type="checkbox"
-            id="check-2"
-          />
-          <label class="checkbox-block__label" for="check-2"></label>
+        <div class="checkbox">
+          <input checked class="checkbox__item" type="checkbox" id="check-2" />
+          <label class="checkbox__label" for="check-2"></label>
         </div>
       </div>
       <div class="radio-block">
-        <div class="radio-block__area">
+        <div class="radio">
           <input
-            class="radio-block__item"
+            class="radio__item"
             type="radio"
             name="radio-button"
             id="radio-1"
           />
-          <label class="radio-block__label" for="radio-1"></label>
+          <label class="radio__label" for="radio-1"></label>
         </div>
-        <div class="radio-block__area">
+        <div class="radio">
           <input
-            class="radio-block__item"
+            class="radio__item"
             checked
             type="radio"
             name="radio-button"
             id="radio-2"
           />
-          <label class="radio-block__label" for="radio-2"></label>
+          <label class="radio__label" for="radio-2"></label>
         </div>
       </div>
     </div>
@@ -404,190 +399,130 @@
     <div class="wrapper wrapper__dropdown">
       <div class="dropdown-section dropdown-section__top">
         <div class="dropdown-block">
-          <div class="dropdown-block__item dropdown-block__dropdown">
-            <input
-              class="dropdown-block__checkbox-button"
-              type="checkbox"
-              id="new"
-            />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="new"
-              >Новый</label
-            >
+          <div class="checkbox dropdown-block__checkbox">
+            <input class="checkbox__item" type="checkbox" id="new" />
+            <label class="checkbox__label" for="new">Новый</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
-            <input
-              class="dropdown-block__checkbox-button"
-              type="checkbox"
-              id="calc"
-            />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="calc"
-              >Расчет</label
-            >
+          <div class="checkbox dropdown-block__checkbox">
+            <input class="checkbox__item" type="checkbox" id="calc" />
+            <label class="checkbox__label" for="calc">Расчет</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="checkbox dropdown-block__checkbox">
             <input
-              class="dropdown-block__checkbox-button"
+              class="checkbox__item"
               checked
               type="checkbox"
               id="confirmed"
             />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="confirmed"
-              >Подтвержден</label
-            >
+            <label class="checkbox__label" for="confirmed">Подтвержден</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
-            <input
-              class="dropdown-block__checkbox-button"
-              type="checkbox"
-              id="postponed"
-            />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="postponed"
-              >Отложен</label
-            >
+          <div class="checkbox dropdown-block__checkbox">
+            <input class="checkbox__item" type="checkbox" id="postponed" />
+            <label class="checkbox__label" for="postponed">Отложен</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
-            <input
-              class="dropdown-block__checkbox-button"
-              type="checkbox"
-              id="completed"
-            />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="completed"
-              >Выполнен</label
-            >
+          <div class="checkbox dropdown-block__checkbox">
+            <input class="checkbox__item" type="checkbox" id="completed" />
+            <label class="checkbox__label" for="completed">Выполнен</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
-            <input
-              class="dropdown-block__checkbox-button"
-              type="checkbox"
-              id="canceled"
-            />
-            <label
-              class="dropdown-block__label dropdown-block__checkbox-label"
-              for="canceled"
-              >Отменен</label
-            >
+          <div class="checkbox dropdown-block__checkbox">
+            <input class="checkbox__item" type="checkbox" id="canceled" />
+            <label class="checkbox__label" for="canceled">Отменен</label>
           </div>
         </div>
         <div class="dropdown-block">
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="new-1"
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="new-1"
-              >Новый</label
-            >
+            <label class="radio__label-none" for="new-1">Новый</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="calc-1"
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="calc-1"
-              >Рассчет</label
-            >
+            <label class="radio__label-none" for="calc-1">Рассчет</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="confirmed-1"
               checked
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="confirmed-1"
+            <label class="radio__label-none" for="confirmed-1"
               >Подтвержден</label
             >
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="postponed-1"
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="postponed-1"
-              >Отложен</label
-            >
+            <label class="radio__label-none" for="postponed-1">Отложен</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="completed-1"
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="completed-1"
-              >Выполнен</label
-            >
+            <label class="radio__label-none" for="completed-1">Выполнен</label>
           </div>
-          <div class="dropdown-block__item dropdown-block__dropdown">
+          <div class="radio dropdown-block__radio">
             <input
-              class="dropdown-block__radio-button"
+              class="radio__item-none"
               type="radio"
-              name="radio-button"
+              name="radio-btn"
               id="canceled-1"
             />
-            <label
-              class="dropdown-block__label dropdown-block__radio-label"
-              for="canceled-1"
-              >Отменен</label
-            >
+            <label class="radio__label-none" for="canceled-1">Отменен</label>
           </div>
         </div>
       </div>
       <div class="dropdown-section">
         <div class="dropdown-block">
-          <label class="dropdown-block__input-label" for="page-number"
-            >Номер страницы</label
-          >
-          <input
-            class="dropdown-block__input"
-            type="text"
-            id="page-number"
-            placeholder="Введите номер"
-          />
+          <div class="input">
+            <label class="input__label" for="input-empty">Номер страницы</label>
+            <div class="input__area">
+              <input
+                class="input__field"
+                type="text"
+                id="input-empty"
+                placeholder="Введите номер"
+              />
+            </div>
+          </div>
         </div>
         <div class="dropdown-block">
           <label class="button-label">Удалить n записей?</label>
-          <button class="button-item dropdown-block__button">
-            <span class="button-item__text">Удалить</span>
+          <button
+            class="button button_color_secondary button_size_medium dropdown-block__button"
+          >
+            <span class="button__text">Удалить</span>
           </button>
-          <button class="button-item dropdown-block__button button-item_active">
-            <span class="button-item__text button-item__text_active"
-              >Отмена</span
-            >
+          <button
+            class="button button_color_primary button_size_medium dropdown-block__button"
+          >
+            <span class="button__text">Отмена</span>
           </button>
         </div>
         <div class="dropdown-block">
           <label class="button-label">Выберите тему</label>
-          <button class="button-item dropdown-block__button">
+          <button
+            class="button button_color_secondary button_size_medium dropdown-block__button"
+          >
             <svg
-              class="button-item__icon"
+              class="button__icon"
               viewBox="0 0 16 16"
               stroke="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -605,11 +540,13 @@
               <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
               <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
             </svg>
-            <span class="button-item__text">Светлая</span>
+            <span class="button__text">Светлая</span>
           </button>
-          <button class="button-item dropdown-block__button button-item_active">
+          <button
+            class="button button_color_primary button_size_medium dropdown-block__button"
+          >
             <svg
-              class="button-item__icon"
+              class="button__icon"
               viewBox="0 0 16 16"
               stroke="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -619,9 +556,7 @@
                 stroke="none"
               />
             </svg>
-            <span class="button-item__text button-item__text_active"
-              >Темная</span
-            >
+            <span class="button__text">Темная</span>
           </button>
         </div>
       </div>
