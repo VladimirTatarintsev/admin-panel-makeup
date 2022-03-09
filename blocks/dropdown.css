@@ -43,12 +43,17 @@ body {
 }
 .dropdown-block__checkbox {
   padding-top: 1rem;
+  width: 100%;
+}
+.dropdown-block__checkbox .checkbox__item + .checkbox__label::before {
+  margin-right: 0.5rem;
 }
 .dropdown-block__checkbox:nth-child(1) {
   padding-top: 0;
 }
 .dropdown-block__radio {
   padding-top: 1rem;
+  width: 100%;
 }
 .dropdown-block__radio:nth-child(1) {
   padding-top: 0;
@@ -62,15 +67,19 @@ body {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  width: 100%;
+  cursor: pointer;
 }
 .radio__item-none:checked + .radio__label-none {
   color: #459df5;
 }
-.dropdown-block__button {
+.button_full-width {
   margin-bottom: 0.5rem;
-  width: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.dropdown-block__button:nth-last-child(1) {
+.button_full-width:nth-last-child(1) {
   margin: 0;
 }
 .button-label {
