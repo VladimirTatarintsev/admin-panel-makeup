@@ -7,14 +7,13 @@ body {
   width: 100%;
   font-family: "Ubuntu", sans-serif;
 }
-.wrapper {
+.wrapper__button {
   width: 36rem;
   height: 23.5rem;
   border: 1px dashed #8055ff;
   border-radius: 5px;
   padding: 3rem;
   white-space: nowrap;
-  margin: 0 auto;
   flex: 0 0 auto;
 }
 .button-table {
