@@ -28,7 +28,7 @@ body {
   margin-bottom: 6rem;
 }
 .dropdown-section__top .dropdown-block {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 .dropdown-block {
   display: flex;
@@ -47,9 +47,7 @@ body {
 .dropdown-block__checkbox {
   width: 100%;
   height: 2rem;
-}
-.dropdown-block__checkbox:nth-child(1) {
-  padding-top: 0;
+  padding: 0 0 0 1rem;
 }
 .dropdown-block__checkbox .checkbox__item + .checkbox__label::before {
   margin-right: 0.5rem;
@@ -57,10 +55,9 @@ body {
 .dropdown-block__radio {
   width: 100%;
   height: 2rem;
+  padding: 0 0 0 1rem;
 }
-.dropdown-block__radio:nth-child(1) {
-  padding-top: 0;
-}
+
 .radio__item-none {
   z-index: -1;
   opacity: 0;
